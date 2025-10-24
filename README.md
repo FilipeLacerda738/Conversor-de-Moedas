@@ -47,9 +47,3 @@ JavaScript: Manipulação do DOM, lógica e chamadas async/await para a API.
 Frankfurter.app API: Fornecimento de dados de cotação e históricos.
 
 Chart.js: Renderização dos gráficos de histórico.
-
-
-📄 Licença
-
-Este projeto é distribuído sob a licença MIT.
-
