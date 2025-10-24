@@ -1,39 +1,28 @@
 :root {
     --primary-color: #0d6efd;
     --primary-dark: #0a58ca;
-    --text-dark: #212529;
-    --text-light: #f8f9fa;
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.3);
+    --bg-dark: #1a1a1a; 
+    --text-light: #f8f9fa; 
+    --text-light-secondary: rgba(255, 255, 255, 0.6); 
+    
+   
+    --glass-bg: rgba(33, 37, 41, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1); 
+    
     --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --card-radius: 1rem;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    color: var(--text-dark);
+    background-color: var(--bg-dark); 
+    color: var(--text-light); 
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     overflow-x: hidden;
 }
 
-.background-gradient {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-}
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
 
 .converter-container {
     max-width: 800px;
@@ -41,12 +30,12 @@ body {
 }
 
 .glass-card {
-    background: var(--glass-bg);
+    background: var(--glass-bg); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: var(--card-radius);
     box-shadow: var(--card-shadow);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glass-border); 
     animation: fadeIn 0.5s ease-out forwards;
     opacity: 0;
 }
@@ -68,6 +57,10 @@ body {
 
 .card-body {
     padding: 2.5rem;
+}
+
+.form-label {
+    color: var(--text-light-secondary); 
 }
 
 .form-control-lg, .form-select-lg {
@@ -110,7 +103,7 @@ body {
 .texto-resultado-base {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--text-dark);
+    color: inherit; 
 }
 
 .valor-resultado-final {
@@ -142,6 +135,17 @@ body {
     height: 300px;
 }
 
+
+.chart-container {
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+
+h2#titulo-grafico {
+    color: var(--text-light);
+}
+
 footer {
     animation: fadeIn 0.5s ease-out 0.4s forwards;
     opacity: 0;
@@ -149,9 +153,10 @@ footer {
 
 #data-atualizacao {
     font-weight: 500;
-    background: var(--glass-bg);
+    background-color: rgba(255, 255, 255, 0.777);
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
+    color: var(--text-light-secondary); 
 }
 
 @media (max-width: 767px) {
