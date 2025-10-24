@@ -1,7 +1,6 @@
 Conversor de Moedas 2.0
 Um conversor de moedas moderno, dinâmico e responsivo, construído do zero com foco em design, performance e dados em tempo real.
 
-preview.PNG
 
  A Evolução: Do Estático ao Dinâmico
 Este projeto é a segunda versão (2.0) de um conversor de moedas.
@@ -53,4 +52,5 @@ Chart.js: Renderização dos gráficos de histórico.
 
 
 📄 Licença
+
 Este projeto é distribuído sob a licença MIT.
