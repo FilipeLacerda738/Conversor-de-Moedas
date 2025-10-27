@@ -14,7 +14,7 @@ API em Tempo Real: Adeus, valores fixos! Agora o projeto consome a API Frankfurt
 
 Gráficos Históricos: Inspirado nos conversores modernos, o projeto agora exibe um gráfico dos últimos 30 dias para qualquer par de moedas selecionado, utilizando a biblioteca Chart.js.
 
-UI/UX Moderna: A interface foi redesenhada com Bootstrap 5 para garantir responsividade total. Adicionamos um efeito glassmorphism (vidro fosco) e um fundo gradiente animado para uma aparência suave e moderna.
+UI/UX Moderna: A interface foi redesenhada com Bootstrap 5 para garantir responsividade total. Adicionei um efeito glassmorphism (vidro fosco) e um fundo gradiente animado para uma aparência suave e moderna.
 
 Performance: Todo o código JavaScript é assíncrono, garantindo que a interface nunca trave enquanto espera uma resposta da API.
 
@@ -47,3 +47,4 @@ JavaScript: Manipulação do DOM, lógica e chamadas async/await para a API.
 Frankfurter.app API: Fornecimento de dados de cotação e históricos.
 
 Chart.js: Renderização dos gráficos de histórico.
+
