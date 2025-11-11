@@ -1,50 +1,37 @@
-Conversor de Moedas 2.0
-Um conversor de moedas moderno, dinâmico e responsivo, construído do zero com foco em design, performance e dados em tempo real.
+# Descrição do projeto
 
+Este projeto é uma aplicação frontend completa para conversão de moedas.
+A aplicação permite ao usuário converter valores entre diversas moedas, buscando as cotações mais recentes de uma API pública. Além disso, exibe um gráfico com o histórico dos últimos 30 dias para o par de moedas selecionado e salva as últimas 10 conversões em um histórico local.
 
- A Evolução: Do Estático ao Dinâmico
-Este projeto é a segunda versão (2.0) de um conversor de moedas.
+## Funcionalidades
 
-A primeira versão era um exercício fundamental de HTML e JS, mas possuía uma limitação crucial: todos os valores de conversão eram fixos no JavaScript. Isso significava que as cotações ficavam desatualizadas instantaneamente, o app não tinha utilidade real e a adição de novas moedas era um processo manual e tedioso.
+**Conversão em Tempo Real:** Converte um valor de uma moeda de origem para uma moeda de destino.
 
-O Conversor de Moedas 2.0 é uma recriação completa, pensada para ser uma ferramenta profissional, eficiente e esteticamente agradável.
+**Cotações Atuais:** Utiliza a API <ins>Frankfurter.app</ins> para buscar as taxas de câmbio mais recentes.
 
-O que mudou?
-API em Tempo Real: Adeus, valores fixos! Agora o projeto consome a API Frankfurter.app para buscar cotações de dezenas de moedas fiduciárias em tempo real.
+**Gráfico Histórico:** Exibe um gráfico de linha (via Chart.js) com a variação da cotação dos últimos 30 dias.
 
-Gráficos Históricos: Inspirado nos conversores modernos, o projeto agora exibe um gráfico dos últimos 30 dias para qualquer par de moedas selecionado, utilizando a biblioteca Chart.js.
+**Troca Rápida:** Um botão permite inverter rapidamente as moedas "De" e "Para".
 
-UI/UX Moderna: A interface foi redesenhada com Bootstrap 5 para garantir responsividade total. Adicionei um efeito glassmorphism (vidro fosco) e um fundo gradiente animado para uma aparência suave e moderna.
+**Histórico de Conversões:** Salva automaticamente as últimas 10 conversões no navegador.
 
-Performance: Todo o código JavaScript é assíncrono, garantindo que a interface nunca trave enquanto espera uma resposta da API.
+**Página de Histórico:** Uma segunda página dedicada exibe a lista de conversões salvas.
 
- Recursos Principais
-Conversão em tempo real entre dezenas de moedas.
+**Limpar Histórico:** Permite ao usuário apagar todos os dados do histórico local.
 
-Gráfico dinâmico com o histórico de cotação dos últimos 30 dias.
+## Tecnologias Usadas
 
-Design responsivo que se adapta a qualquer tela, de celulares a TVs.
+**HTML:** Estruturação semântica do conteúdo.
 
-Interface moderna com efeito glassmorphism e fundo gradiente animado.
+**CSS:** Estilização customizada, variáveis CSS, animações e responsividade.
 
-Botão de troca rápida para inverter as moedas de origem e destino.
+**JavaScript:** Manipulação do DOM, eventos, lógica da aplicação, chamadas async/await para a API e uso do localStorage.
 
-Feedback visual com loader durante as chamadas de API.
+**Bootstrap:** Framework CSS para layout, componentes e responsividade.
 
-Formatação de moeda correta para o padrão brasileiro.
+**Bootstrap Icons:** Biblioteca de ícones vetoriais.
 
-Exibição da data da última atualização da cotação.
+**Chart.js:** Biblioteca JavaScript para a criação de gráficos interativos.
 
- Tecnologias Utilizadas
-HTML5: Estrutura semântica e acessível.
-
-CSS3: Estilização moderna, animações (gradiente, fade-in) e glassmorphism.
-
-Bootstrap 5: Componentes de UI e sistema de grid responsivo.
-
-JavaScript: Manipulação do DOM, lógica e chamadas async/await para a API.
-
-Frankfurter.app API: Fornecimento de dados de cotação e históricos.
-
-Chart.js: Renderização dos gráficos de histórico.
-
+## O que aprendi com o projeto
+Durante o desenvolvimento dessa aplicação, aprendi a integrar APIs externas de forma assíncrona e lidar com os dados retornados para atualizar a interface em tempo real. Também aprofundei meu entendimento sobre o funcionamento do `localStorage`, criação e manipulação de gráficos com o Chart.js e boas práticas de organização de código JavaScript. Além disso, refinei habilidades de responsividade com Bootstrap e CSS puro, garantindo uma experiência fluida tanto no desktop quanto no mobile.
