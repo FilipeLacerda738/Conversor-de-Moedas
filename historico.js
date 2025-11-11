@@ -35,30 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return `${dia}/${mes}/${ano} ${hora}:${min}`;
     }
 
- 
+    // Função para carregar o histórico do localStorage e exibir na página
     function carregarHistorico() {
         const historico = JSON.parse(localStorage.getItem(CHAVE_HISTORICO)) || [];
-        console.log('Dados puxados com sucesso');
+        console.log('Dados puxados com sucesso'); // Log de sucesso ao carregar o histórico
         
         while (listaHistoricoEl.firstChild && listaHistoricoEl.firstChild !== historicoVazioEl) {
-            listaHistoricoEl.removeChild(listaHistoricoEl.firstChild);
+            listaHistoricoEl.removeChild(listaHistoricoEl.firstChild); // Limpa itens antigos
         }
         
         if (historico.length === 0) {
-            historicoVazioEl.style.display = 'block'; 
+            historicoVazioEl.style.display = 'block'; // Mostra a mensagem de histórico vazio
         } else {
-            historicoVazioEl.style.display = 'none'; 
+            historicoVazioEl.style.display = 'none'; // Esconde a mensagem de histórico vazio
             
-            
+            // Adiciona cada registro do histórico à lista
             historico.forEach(registro => {
-                const itemEl = document.createElement('div');
+                const itemEl = document.createElement('div'); // Cria um novo elemento para o item do histórico
                 itemEl.className = 'list-group-item history-item'; 
                 
-                const valorDeFormatado = formatarMoeda(registro.valorDe, registro.de);
-                const valorParaFormatado = formatarMoeda(registro.valorPara, registro.para);
+                const valorDeFormatado = formatarMoeda(registro.valorDe, registro.de); // Formata o valor de origem
+                const valorParaFormatado = formatarMoeda(registro.valorPara, registro.para); // Formata o valor convertido
                 const dataFormatada = formatarData(registro.data);
 
-               
+               // Preenche o conteúdo do item do histórico
                 itemEl.innerHTML = `
                     <div class="d-flex w-100 justify-content-between">
                         <span class="from">${valorDeFormatado}</span>
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="to">${valorParaFormatado}</div>
                 `;
                 
-                
+                // Insere o item antes do elemento de histórico vazio
                 listaHistoricoEl.insertBefore(itemEl, historicoVazioEl);
             });
         }
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function limparHistorico() {
   
         const confirmado = confirm('Tem certeza que deseja limpar todo o histórico?');
-        console.log('Confirmação de limpeza do histórico:', confirmado);
+        console.log('Confirmação de limpeza do histórico:', confirmado); // Log da confirmação
         
         if (confirmado) {
             localStorage.removeItem(CHAVE_HISTORICO); 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-   
+   // Adiciona o evento de clique ao botão de limpar histórico
     btnLimpar.addEventListener('click', limparHistorico);
 
  

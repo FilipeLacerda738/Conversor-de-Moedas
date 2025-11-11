@@ -35,3 +35,32 @@ A aplicação permite ao usuário converter valores entre diversas moedas, busca
 
 ## O que aprendi com o projeto
 Durante o desenvolvimento dessa aplicação, aprendi a integrar APIs externas de forma assíncrona e lidar com os dados retornados para atualizar a interface em tempo real. Também aprofundei meu entendimento sobre o funcionamento do `localStorage`, criação e manipulação de gráficos com o Chart.js e boas práticas de organização de código JavaScript. Além disso, refinei habilidades de responsividade com Bootstrap e CSS puro, garantindo uma experiência fluida tanto no desktop quanto no mobile.
+
+## Gráficos e Visualização de Dados
+    Aprender a usar a biblioteca Chart.js
+ para gerar gráficos de linha interativos.
+
+Entender como preparar dados de séries temporais (labels com datas, valores convertidos, cores e preenchimentos).
+
+Lidar com a destruição e recriação do gráfico (meuGrafico.destroy()) pra evitar sobreposição e bugs visuais.
+
+Configurar opções como `responsive, tension, fill, tooltip` e `legend` garantindo uma visualização elegante e intuitiva.
+
+Aprender na prática o uso do elemento <canvas> no HTML e sua interação via contexto 2D.
+
+## Fontes de estudo e referências úteis:
+Documentação oficial: [Chart.js Docs](https://www.chartjs.org/docs/latest/)
+Guia prático: [W3Schools - Chart.js](https://www.w3schools.com/graphics/plot_chartjs.asp?)
+Tutorial: https://www.youtube.com/watch?v=sE08f4iuOhA
+Tutorial complementar: (https://www.youtube.com/watch?v=cuEtnrL9-H0)
+
+
+## Estilo
+
+Usar Bootstrap pra construir uma interface responsiva e consistente, combinando com CSS personalizado para dar um toque próprio.
+
+Aplicar ícones com Bootstrap Icons e microinterações para deixar a interface mais viva.
+
+Criar um botão de “trocar moedas” funcional, um pequeno detalhe que melhora muito a usabilidade.
+
+Aprimorar mensagens de erro, loaders e feedbacks visuais pra tornar o app mais intuitivo.
